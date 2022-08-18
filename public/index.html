@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservicio con Node.js</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        section {
+            width: 100%;
+            max-width: 120rem;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            padding: 1rem 0;
+            font-size: 1.8rem;
+        }
+
+        ul li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .nav__header {
+            font-weight: 600;
+        }
+
+        .method {
+            padding: 0.6rem;
+            color: #fff;
+            border-radius: 1rem;
+            font-weight: 600;
+        }
+
+        .method--1 { background-color: green; }
+        .method--2 { background-color: orange; }
+        .method--3 { background-color: blue; }
+        .method--4 { background-color: red; }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Rutas API</h1>
+            <ul class="nav">
+                <li class="nav__header">Departamentos</li>
+                <li><span class="method method--1">GET</span> <code>/api/departamentos</code></li>
+                <li><span class="method method--2">POST</span> <code>/api/departamentos</code></li>
+                <li><span class="method method--3">UPDATE</span> <code>/api/departamentos/{id}/update</code></li>
+                <li><span class="method method--4">DELETE</span> <code>/api/departamentos/{id}/delete</code></li>
+                <li class="nav__header">Empleados</li>
+                <li><span class="method method--1">GET</span> <code>/api/empleados</code></li>
+                <li><span class="method method--2">POST</span> <code>/api/empleados</code></li>
+                <li><span class="method method--3">UPDATE</span> <code>/api/empleados/{id}/update</code></li>
+                <li><span class="method method--4">DELETE</span> <code>/api/empleados/{id}/delete</code></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
